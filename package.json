@@ -1,0 +1,28 @@
+{
+  "name": "rtc-signaller-socket.io",
+  "version": "0.0.0",
+  "description": "Socket.IO signalling helper for rtc.io signaller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gendocs": "sourcecat | emu > README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtc.io/rtc-signaller-socket.io.git"
+  },
+  "keywords": [
+    "rtc.io",
+    "webrtc",
+    "signaller",
+    "socket.io"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@nicta.com.au>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/rtc.io/rtc-signaller-socket.io/issues"
+  },
+  "dependencies": {
+    "debug": "*"
+  }
+}
