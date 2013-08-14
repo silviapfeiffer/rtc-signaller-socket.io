@@ -1,6 +1,6 @@
 {
   "name": "rtc-signaller-socket.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Socket.IO signalling helper for rtc.io signaller",
   "main": "index.js",
   "scripts": {
