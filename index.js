@@ -31,6 +31,8 @@ module.exports = function(io) {
         preventBroadcast = handler(io, socket, data);
       }
 
+      debug('got message: ' + data, preventBroadcast);
+
       // if the message has not been handled, then 
       // otherwise, just broadcast
       if (! preventBroadcast) {
@@ -39,8 +41,10 @@ module.exports = function(io) {
     }
 
     function handleDisconnect() {
+      debug('socket disconnect, peer id: ' + socket.peerId);
+
       if (socket.peerId) {
-        io.sockets.send('/leave:' + socket.peerId);
+        io.sockets.send('/leave|' + socket.peerId);
       }
     }
 
